@@ -14,7 +14,7 @@ Just to give you a sense of my experience here is a brief overview of what I hav
 * *Cloud Computing Engineer* (LSU Distributed Systems Research) : Jan. 2023 - Dec. 2023
 * *Cloud Computing Engineer* (LSU IOT/Physiological Research) : Aug. 2023 - Dec. 2023
 * *C#/.NET Associate Developer* (Rural Sourcing) : Aug. 2022 - Oct. 2023
-* *Backend-Engineer* (Vigilus)* : Jan. 2023 - Dec. 2023
+* *Backend-Engineer (Vigilus)* : Jan. 2023 - Dec. 2023
 
 ## Current Research
 
