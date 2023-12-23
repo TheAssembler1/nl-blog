@@ -1,4 +1,3 @@
 ---
-title: Noah Lewis
-author: Noah Lewis
+layout: home
 ---
