@@ -1,5 +1,9 @@
 ---
-layout: page
-title: Hello World!
-tagline: Supporting tagline
+layout: home
 ---
+
+<style>
+  .footer {
+    display: none;
+  }
+</style>
