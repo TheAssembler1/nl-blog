@@ -3,7 +3,7 @@ layout: home
 ---
 
 <style>
-  .footer {
+  .site-footer {
     display: none;
   }
   .rss-subscribe {
