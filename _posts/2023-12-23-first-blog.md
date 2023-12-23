@@ -18,7 +18,7 @@ Just to give you a sense of my experience here is a brief overview of what I hav
 
 ## Current Research
 
-I have very recently started working with Suren Byna whose personal webiste you may find [here](https://sbyna.github.io/). My work will involve optimization of I/O on HPC systems. It is very exciting stuff and I can not wait to get started! Starting in early January 2024, I will begin work on a survey paper regarding the topic **ML I/O Acess Patterns**. As I read through papers on the subject I plan on blogging about my findings here. So, if you are interested feel free to stick around 😄.
+I have very recently started working with Suren Byna whose personal website you may find [here](https://sbyna.github.io/). My work will involve optimization of I/O on HPC systems. It is very exciting stuff and I can not wait to get started! Starting in early January 2024, I will begin work on a survey paper regarding the topic **ML I/O Acess Patterns**. As I read through papers on the subject I plan on blogging about my findings here. So, if you are interested feel free to stick around 😄.
 
 ## Future Plans
 
