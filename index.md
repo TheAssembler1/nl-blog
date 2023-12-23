@@ -1,4 +1,5 @@
 ---
+name: ""
 title: Noah Lewis
 author: Noah Lewis
 date_format: "%B %-d, %Y"
@@ -18,4 +19,3 @@ defaults:
     values:
       layout: "page"
 ---
-
