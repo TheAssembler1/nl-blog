@@ -1,19 +1,8 @@
+title: Noah Lewis (Personal Webiste)
 author: Noah Lewis
 
 social-network-links:
   email: "nlewi26@lsu.edu"
-  
-share-links-active:
-  email: true
-
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      comments: true  
-      social-share: true 
+  rss: false
 
 theme: minima
