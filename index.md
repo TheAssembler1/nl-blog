@@ -6,4 +6,7 @@ layout: home
   .footer {
     display: none;
   }
+  .rss-subscribe {
+    display: none;
+  }
 </style>
