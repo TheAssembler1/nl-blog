@@ -7,7 +7,7 @@ date: 2023-12-23
 
 ## About Me
 
-I am currently entering my last semester at Lousiana State University (LSU). I should receive a degree in Computer Science and a minor in Mathematics by the end of May 🤞. 
+I am currently entering my last semester at Lousiana State University (LSU). I should receive a degree in Computer Science and a minor in Mathematics by the end of May 2024 🤞. 
 
 Just to give you a sense of my experience here is a brief overview of what I have done:
 
