@@ -3,7 +3,7 @@ url: https://theassembler1.com
 header_pages:
   - about.md
 
-theme: minima
+remote_theme: jekyll/minima
 
 minima:
   skin: dark
