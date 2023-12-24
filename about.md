@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: About Me
 ---
 
 I am currently entering my last semester at Louisiana State University (LSU). I should receive a degree in Computer Science and a minor in Mathematics by the end of May 2024 🤞.

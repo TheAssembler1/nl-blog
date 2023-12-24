@@ -1,5 +1,5 @@
 ---
-title: "Hi 👋, Welcome to My Blog"
+title: "Hi 👋, Welcome to my Blog"
 date: 2023-12-23
 ---
 
