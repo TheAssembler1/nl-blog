@@ -49,8 +49,8 @@ One really handy package to install is `hdf5-tools`. This gives additional tools
 
 ### New Functions Used
 
-- [H5Fcreate](#H5Fcreate)
-- [H5Fclose](#H5Fcreate)
+- [H5Fcreate](#h5fcreate)
+- [H5Fclose](#h5fclose)
 
 ```
 #define FILE_NAME "file.h5"
