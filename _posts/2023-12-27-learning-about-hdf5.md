@@ -11,8 +11,6 @@ In traditional file systems, such as ext4, accessing files requires the requesti
 
 While the HDF5 library is written in C function wrappers have been written to support other languages such as FORTAN 90, C++, and Java.
 
-If you would like to see details about the functions used through the blog please use the details found at the [end](#function-signature-details)
-
 ## Today's Reading
 
 So today I plan on reading through the, ["Learning the Basics"](https://docs.hdfgroup.org/hdf5/develop/_learn_basics.html) as I have never worked with the file format myself. Since my future research involves HPC I/O, I have a feeling I should understand HDF5 very well. 
@@ -49,8 +47,8 @@ One really handy package to install is `hdf5-tools`. This gives additional tools
 
 ### New Functions Used
 
-- [H5Fcreate](#h5fcreate)
-- [H5Fclose](#h5fclose)
+- [H5Fcreate](https://docs.hdfgroup.org/hdf5/develop/group___h5_f.html#gae64b51ee9ac0781bc4ccc599d98387f4)
+- [H5Fclose](https://docs.hdfgroup.org/hdf5/develop/group___j_h5_f.html#gae2af8e1b3fcf6a3a98ab345ed3ff710f)
 
 ```
 #define FILE_NAME "file.h5"
@@ -73,28 +71,58 @@ This shows that we have an HDF5 file named **file.5** which contains the root `/
 
 ## Dataset Creation
 
+### New Functions Used
+
+- [H5Fopen](https://docs.hdfgroup.org/hdf5/develop/group___h5_f.html#gaa3f4f877b9bb591f3880423ed2bf44bc)
+- [H5Screate_simple](https://docs.hdfgroup.org/hdf5/develop/group___h5_s.html#ga8e35eea5738b4805856eac7d595254ae)
+- [H5Dcreate2](https://docs.hdfgroup.org/hdf5/develop/group___h5_d.html#gabf62045119f4e9c512d87d77f2f992df)
+- [H5Dclose](https://docs.hdfgroup.org/hdf5/develop/group___h5_d.html#gae47c3f38db49db127faf221624c30609)
+- [H5Sclose](https://docs.hdfgroup.org/hdf5/develop/group___j_h5_s.html#ga44b145f5c6977c082ac2c2dc121641fa)
+- [H5Fclose](https://docs.hdfgroup.org/hdf5/develop/group___j_h5_f.html#gae2af8e1b3fcf6a3a98ab345ed3ff710f)
+
+
 So in this section we need to write code to open the existing file and then create a dataset and write the dataset to the root group in the file.
+
+```
+#define FILE_NAME "file.h5"
+
+// NOTE: opening file
+hid_t file_id = H5Fopen(FILE_NAME, H5F_ACC_RDWR, H5P_DEFAULT);
+
+// NOTE: setting dimensions of data
+hsize_t dims[2] = {4, 6};
+
+// NOTE: creating dataspace and dataset
+hid_t dataspace_id = H5Screate_simple(2, dims, NULL);
+
+// NOTE: writes default values to file
+hid_t dataset_id = H5Dcreate2(file_id, "/dset", H5T_STD_I32BE, dataspace_id, H5P_DEFAULT, H5P_DEFAULT, H5P_DEFAULT);
+
+// NOTE: closing all resources, should check status after closing
+H5Dclose(dataset_id);
+H5Sclose(dataspace_id);
+H5Fclose(file_id);
+```
+
+`h5dump file.h5` outputs:
+
+```
+HDF5 "file.h5" {
+GROUP "/" {
+   DATASET "dset" {
+      DATATYPE  H5T_STD_I32BE
+      DATASPACE  SIMPLE { ( 4, 6 ) / ( 4, 6 ) }
+      DATA {
+      (0,0): 0, 0, 0, 0, 0, 0,
+      (1,0): 0, 0, 0, 0, 0, 0,
+      (2,0): 0, 0, 0, 0, 0, 0,
+      (3,0): 0, 0, 0, 0, 0, 0
+      }
+   }
+}
+}
+```
 
 ## Conclusion
 
 Hopefully you enjoyed my rantings about the HDF5 file format. I just wanted to give a basic overview of what HDF was and how to do some basic operatiosn with the file format. See you next time ✌️!
-
-## Function Signature Details
-
-## H5Fcreate
-```
-hid_t H5Fcreate(constchar * filename, unsigned flags, hid_t fcpl_id, hid_t fapl_id)
-
-filename - name of file to create
-flags - access flags
-      - H5F_ACC_TRUNC: truncate file, if it already exists, erasing all data previously stored in the file
-      - H5F_ACC_EXCL: fail if file already exists
-fcpl_id - file creation property list identifier
-fapl_id - file access property list identifer
-```
-
-## H5Fclose
-```
-herr_t H5Fclose(hid_t file_id)
-file_id - file identifer
-```
