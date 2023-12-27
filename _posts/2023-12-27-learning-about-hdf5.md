@@ -21,7 +21,7 @@ HDF uses the concept of groups and datasets in place of files. Both groups and d
 
 ## Using HDF5
 
-In traditional file systems, the programmer must read and write through abstract APIs, such as POSIX or STDIO, to interact with the underlying file systems, such as ext4. HDF5 differs in that it exposes its own user-level API, in which the implementation will drop down to a lower-level API, such as POSIX, STDIO, or MPI-IO, which the programmer can configure. The user-level API uses an  organized naming system where function signatures begin with *H5\** where *\** is one or two uppercase letters indicating the type of object on which the function operates.
+In traditional file systems, the programmer must read and write through abstract APIs, such as POSIX or STDIO, to interact with the underlying file systems, such as ext4. HDF5 differs in that it exposes its own user-level API, in which the implementation will drop down to a lower-level API, such as POSIX, STDIO, or MPI-IO, which the programmer can configure. The user-level API uses an  organized naming system where function signatures begin with **H5\*** where **\*** is one or two uppercase letters indicating the type of object on which the function operates.
 
 ## Compiling HDF5
 
