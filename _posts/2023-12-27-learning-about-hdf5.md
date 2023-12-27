@@ -27,11 +27,10 @@ In traditional file systems, the programmer must read and write through abstract
 
 So the HDF5 comes with both serial and parallel version one for serial file systems and one for parallel file systems respectively. If your on Debian/Ubuntu you should be able to get an HDF5 program to compile using gcc with:
 
-``
+```
 sudo apt install libhdf5-dev
 gcc -o your_program example.c -lhdf5 -L/usr/lib/x86_64-linux-gnu/hdf5/serial -I/usr/include/hdf5/serial
-
-``
+```
 
 One really helpful command I found from [here](https://stackoverflow.com/questions/43151312/how-to-compile-c-program-with-hdf5-source-code) `h5cc` shows the required parameters to compile your code. Here's the output I get:
 
