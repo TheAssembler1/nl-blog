@@ -36,7 +36,8 @@ gcc -o your_program example.c -lhdf5 -L/usr/lib/x86_64-linux-gnu/hdf5/serial -I/
 One really helpful command I found from [here](https://stackoverflow.com/questions/43151312/how-to-compile-c-program-with-hdf5-source-code) `h5cc` shows the required parameters to compile your code. Here's the output I get:
 
 ```
-gcc -I/usr/include/hdf5/serial -L/usr/lib/x86_64-linux-gnu/hdf5/serial /usr/lib/x86_64-linux-gnu/hdf5/serial/libhdf5_hl.a /usr/lib/x86_64-linux-gnu/hdf5/serial/libhdf5.a -lcrypto -lcurl -lpthread -lsz -lz -ldl -lm
+gcc -I/usr/include/hdf5/serial -L/usr/lib/x86_64-linux-gnu/hdf5/serial /usr/lib/x86_64-linux-gnu/hdf5/serial/libhdf5_hl.a 
+/usr/lib/x86_64-linux-gnu/hdf5/serial/libhdf5.a -lcrypto -lcurl -lpthread -lsz -lz -ldl -lm
 ```
 
 As you can see we are using the serial variant of the library because the underlying filesystem is ext4.
