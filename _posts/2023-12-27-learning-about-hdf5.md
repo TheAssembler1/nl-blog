@@ -11,7 +11,7 @@ In traditional file systems, such as ext4, accessing files requires the requesti
 
 While the HDF5 library is written in C function wrappers have been written to support other languages such as FORTAN 90, C++, and Java.
 
-If you would like to see details about the functions used through the blog please use the details found at the [end](#function-signaturedetails)
+If you would like to see details about the functions used through the blog please use the details found at the [end](#function-signature-details)
 
 ## Today's Reading
 
@@ -81,8 +81,7 @@ Hopefully you enjoyed my rantings about the HDF5 file format. I just wanted to g
 
 ## Function Signature Details
 
-
-[#function-signaturedetails]:
+## H5Fcreate
 ```
 hid_t H5Fcreate(constchar * filename, unsigned flags, hid_t fcpl_id, hid_t fapl_id)
 
