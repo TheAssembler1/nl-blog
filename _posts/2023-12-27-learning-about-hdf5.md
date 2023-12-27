@@ -11,6 +11,8 @@ In traditional file systems, such as ext4, accessing files requires the requesti
 
 While the HDF5 library is written in C function wrappers have been written to support other languages such as FORTAN 90, C++, and Java.
 
+If you would like to see details about the functions used through the blog please use the details found at the [end](#function-signaturedetails)
+
 ## Today's Reading
 
 So today I plan on reading through the, ["Learning the Basics"](https://docs.hdfgroup.org/hdf5/develop/_learn_basics.html) as I have never worked with the file format myself. Since my future research involves HPC I/O, I have a feeling I should understand HDF5 very well. 
@@ -45,8 +47,40 @@ One really handy package to install is `hdf5-tools`. This gives additional tools
 
 ## Open/Close Files
 
-So the signature to open a file is:
+- [H5Fcreate](#H5Fcreate)
+- [H5Fclose](#H5Fcreate)
 
+```
+#define FILE_NAME "file.h5"
+hid_t file_id = H5Fcreate(FILE_NAME, H5F_ACC_TRUNC, H5P_DEFAULT, H5P_DEFAULT);
+herr_t status = H5Fclose(file_id);
+```
+
+You could then check the status for errors.
+
+After running the program you should get a file named `file.h5` in the directory the program was run. Running `h5dump file.h5` outputs:
+
+```
+HDF5 "file.h5" {
+GROUP "/" {
+}
+}
+```
+
+This shows that we have an HDF5 file named **file.5** which contains the root `/` group.
+
+## Dataset Creation
+
+So in this section we need to write code to open the existing file and then create a dataset and write the dataset to the root group in the file.
+
+## Conclusion
+
+Hopefully you enjoyed my rantings about the HDF5 file format. I just wanted to give a basic overview of what HDF was and how to do some basic operatiosn with the file format. See you next time ✌️!
+
+## Function Signature Details
+
+
+## H5Fcreate
 ```
 hid_t H5Fcreate(constchar * filename, unsigned flags, hid_t fcpl_id, hid_t fapl_id)
 
@@ -58,39 +92,8 @@ fcpl_id - file creation property list identifier
 fapl_id - file access property list identifer
 ```
 
-and the signature for closing a file:
-
+## H5Fclose
 ```
 herr_t H5Fclose(hid_t file_id)
 file_id - file identifer
 ```
-
-So this is the basic code for opening a file and then closing it:
-
-
-```
-#define FILE_NAME "file.h5"
-hid_t file_id = H5Fcreate(FILE_NAME, H5F_ACC_TRUNC, H5P_DEFAULT, H5P_DEFAULT);
-herr_t status = H5Fclose(file_id);
-```
-
-You could then check the status for errors.
-
-After running the program you should get a file named `file.h5` in the directory the program was ran. Running `h5dump file.h5` outputs:
-
-```
-HDF5 "file.h5" {
-GROUP "/" {
-}
-}
-```
-
-This shows that we have HDF5 file named **file.5** which has the root `/` group.
-
-## Dataset Creation
-
-
-
-## Conclusion
-
-Hopefully you enjoyed my rantings about the HDF5 file format. I just wanted to give a basic overview of what HDF was and how to do some basic operatiosn with the file format. See you next time ✌️!
