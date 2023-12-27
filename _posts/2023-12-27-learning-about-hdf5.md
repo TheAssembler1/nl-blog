@@ -123,6 +123,21 @@ GROUP "/" {
 }
 ```
 
+So you can see that working with HDF5 feels more like working with a database where you need to define a schema for which you can then use to perform operations against a files dataset.
+
+## Dataset I/O Operations
+
+When using HDF5 the format of the file in memory can be different than the one on disk. This causes the programmer specify these properties:
+
+- The dataset
+- The dataset's datatype in memory
+- The dataset's dataspace in memory
+- The dataset's dataspace in file
+- The dataset transfer property list
+- The data buffer
+
+Sheesh that's a pain, but enforncing the programmer to be detailed in this way allows the HDF5 library to perform optimizations when writing/reading to and from disk.
+
 ## Conclusion
 
 Hopefully you enjoyed my rantings about the HDF5 file format. I just wanted to give a basic overview of what HDF was and how to do some basic operatiosn with the file format. See you next time ✌️!
