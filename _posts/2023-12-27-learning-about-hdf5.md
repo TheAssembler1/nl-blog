@@ -11,7 +11,7 @@ In traditional file systems, such as ext4, accessing files requires the requesti
 
 While the HDF5 library is written in C function wrappers have been written to support other languages such as FORTAN 90, C++, and Java.
 
-## What I am Reading Through Today
+## Today's Reading
 
 So today I plan on reading through the, ["Learning the Basics"](https://docs.hdfgroup.org/hdf5/develop/_learn_basics.html) as I have never worked with the file format myself. Since my future research involves HPC I/O, I have a feeling I should understand HDF5 very well. 
 
