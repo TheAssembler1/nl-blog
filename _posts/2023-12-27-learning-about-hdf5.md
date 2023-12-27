@@ -41,4 +41,56 @@ gcc -I/usr/include/hdf5/serial -L/usr/lib/x86_64-linux-gnu/hdf5/serial /usr/lib/
 
 As you can see we are using the serial variant of the library because the underlying filesystem is ext4.
 
-## TO BE CONTINUED!
+One really handy package to install is `hdf5-tools`. This gives additional tools to inspect HDF5 files making it easier to write and debug your programs.
+
+## Open/Close Files
+
+So the signature to open a file is:
+
+```
+hid_t H5Fcreate(constchar * filename, unsigned flags, hid_t fcpl_id, hid_t fapl_id)
+
+filename - name of file to create
+flags - access flags
+      - H5F_ACC_TRUNC: truncate file, if it already exists, erasing all data previously stored in the file
+      - H5F_ACC_EXCL: fail if file already exists
+fcpl_id - file creation property list identifier
+fapl_id - file access property list identifer
+```
+
+and the signature for closing a file:
+
+```
+herr_t H5Fclose(hid_t file_id)
+file_id - file identifer
+```
+
+So this is the basic code for opening a file and then closing it:
+
+
+```
+#define FILE_NAME "file.h5"
+hid_t file_id = H5Fcreate(FILE_NAME, H5F_ACC_TRUNC, H5P_DEFAULT, H5P_DEFAULT);
+herr_t status = H5Fclose(file_id);
+```
+
+You could then check the status for errors.
+
+After running the program you should get a file named `file.h5` in the directory the program was ran. Running `h5dump file.h5` outputs:
+
+```
+HDF5 "file.h5" {
+GROUP "/" {
+}
+}
+```
+
+This shows that we have HDF5 file named **file.5** which has the root `/` group.
+
+## Dataset Creation
+
+
+
+## Conclusion
+
+Hopefully you enjoyed my rantings about the HDF5 file format. I just wanted to give a basic overview of what HDF was and how to do some basic operatiosn with the file format. See you next time ✌️!
