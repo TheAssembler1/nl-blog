@@ -136,7 +136,7 @@ When using HDF5 the format of the file in memory can be different than the one o
 - The dataset transfer property list
 - The data buffer
 
-Sheesh that's a pain, but enforncing the programmer to be detailed in this way allows the HDF5 library to perform optimizations when writing/reading to and from disk.
+Sheesh that's a pain, but requiring the programmer to be detailed in this way allows the HDF5 library to perform optimizations when writing/reading to and from disk.
 
 ## Conclusion
 
