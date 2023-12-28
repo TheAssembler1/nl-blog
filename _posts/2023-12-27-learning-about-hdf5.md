@@ -145,27 +145,27 @@ When using HDF5 the format of the file in memory can be different than the one o
 
 Sheesh that's a pain, but requiring the programmer to be detailed in this way allows the HDF5 library to perform optimizations when writing/reading to and from disk.
 
-```c=
-  int mem_data[4][6] = {
-    {1, 2, 3, 4, 5, 6},
-    {7, 8, 9, 10, 11, 12},
-    {13, 14, 15, 16, 17, 18},
-    {19, 20, 21, 22, 23, 24}
-  };
+```
+int mem_data[4][6] = {
+{1, 2, 3, 4, 5, 6},
+{7, 8, 9, 10, 11, 12},
+{13, 14, 15, 16, 17, 18},
+{19, 20, 21, 22, 23, 24}
+};
 
-  hid_t file_id = H5Fopen("file.h5", H5F_ACC_RDWR, H5P_DEFAULT);
-  hid_t dataset_id = H5Dopen(file_id, "/dset", H5P_DEFAULT);
+hid_t file_id = H5Fopen("file.h5", H5F_ACC_RDWR, H5P_DEFAULT);
+hid_t dataset_id = H5Dopen(file_id, "/dset", H5P_DEFAULT);
 
-  // NOTE: writing to dataset
-  herr_t write_status = H5Dwrite(dataset_id, H5T_NATIVE_INT, H5S_ALL, H5S_ALL, H5P_DEFAULT, mem_data);
-  
-  // NOTE: reading from dataset
-  herr_t read_status = H5Dread(dataset_id, H5T_NATIVE_INT, H5S_ALL, H5S_ALL, H5P_DEFAULT, mem_data);
+// NOTE: writing to dataset
+herr_t write_status = H5Dwrite(dataset_id, H5T_NATIVE_INT, H5S_ALL, H5S_ALL, H5P_DEFAULT, mem_data);
 
-  // NOTE: closing all resources, should check status after closing
-  hid_t dataset_status = H5Dclose(dataset_id);
-  hid_t file_status = H5Fclose(file_id);
-```c=
+// NOTE: reading from dataset
+herr_t read_status = H5Dread(dataset_id, H5T_NATIVE_INT, H5S_ALL, H5S_ALL, H5P_DEFAULT, mem_data);
+
+// NOTE: closing all resources, should check status after closing
+hid_t dataset_status = H5Dclose(dataset_id);
+hid_t file_status = H5Fclose(file_id);
+```
 
 `h5dump file.h5` outputs:
 
