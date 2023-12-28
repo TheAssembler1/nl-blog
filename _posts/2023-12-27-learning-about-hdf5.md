@@ -67,7 +67,7 @@ GROUP "/" {
 }
 ```
 
-This shows that we have an HDF5 file named **file.5** which contains the root `/` group.
+This shows that we have an HDF5 file named **file.h5** which contains the root `/` group.
 
 ## Dataset Creation
 
