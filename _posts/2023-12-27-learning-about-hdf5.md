@@ -1,7 +1,7 @@
 ---
 title: "Learning About HDF5 💽"
 date: 2023-12-27
-excerpt: What HDF5 is and why it is usefull. How to install HDF5 for use on a serial file system. How to create, open, and close files. How to create, read, and write from datasets.
+excerpt: What HDF5 is and why it is useful. How to install HDF5 for use on a serial file system. How to create, open, and close files. How to create datasets and how to read/write to/from them.
 ---
 
 ## What is HDF5 and why is it Helpful
