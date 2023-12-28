@@ -2,7 +2,7 @@
 title: "Hi 👋, Welcome to my Blog"
 date: 2023-12-23
 excerpt: Past professional experience. What is my current research. What are my future plans.
-hidden: false
+hidden: true
 ---
 
 ## About Me
