@@ -145,7 +145,7 @@ When using HDF5 the format of the file in memory can be different than the one o
 
 Sheesh that's a pain, but requiring the programmer to be detailed in this way allows the HDF5 library to perform optimizations when writing/reading to and from disk.
 
-```
+```c=
   int mem_data[4][6] = {
     {1, 2, 3, 4, 5, 6},
     {7, 8, 9, 10, 11, 12},
@@ -165,7 +165,7 @@ Sheesh that's a pain, but requiring the programmer to be detailed in this way al
   // NOTE: closing all resources, should check status after closing
   hid_t dataset_status = H5Dclose(dataset_id);
   hid_t file_status = H5Fclose(file_id);
-```
+```c=
 
 `h5dump file.h5` outputs:
 
