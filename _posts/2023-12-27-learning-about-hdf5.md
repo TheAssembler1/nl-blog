@@ -124,7 +124,7 @@ GROUP "/" {
 }
 ```
 
-So you can see that working with HDF5 feels more like working with a database where you need to define a schema for which you can then use to perform operations against a files dataset.
+So you can see that working with HDF5 feels more like working with a database, where you need to define a schema that you can then use to perform operations.
 
 ## Dataset I/O Operations
 
