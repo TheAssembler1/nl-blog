@@ -1,16 +1,12 @@
 title: Noah Lewis (Personal Website)
-
-# author_logo: profile.png
-author: Noah Lewis
-author_bio: >
+author :
+  name : Noah Lewis
+  email : nlewi26@lsu.edu
+  github : https://www.github.com/TheAssembler1
+description: >
   I currently attend Louisiana State University (LSU) and entering my last semster at the college. Afterwards, 
   I plan to pursue a PHD at Ohio State Univeristy (OSU) under the advisory of Suren Byna. My research will 
   revolve around HPC I/O.
-author_email: "nlewi26@lsu.edu.com"
-author_location: India
-author_website_url: "https://theassembler1.com"
-
-description: ""
 header_pages:
   - about.md
 
