@@ -1,7 +1,7 @@
 ---
 title: "Learning About HDF5 💽"
 date: 2023-12-27
-description: This is a brief description of your blog post.
+excerpt: This is a brief description of your blog post.
 ---
 
 ## What is HDF5 and why is it Helpful

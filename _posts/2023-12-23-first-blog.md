@@ -1,7 +1,7 @@
 ---
 title: "Hi 👋, Welcome to my Blog"
 date: 2023-12-23
-description: This is a brief description of your blog post.
+excerpt: This is a brief description of your blog post.
 ---
 
 ## About Me
