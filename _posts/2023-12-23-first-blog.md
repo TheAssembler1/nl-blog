@@ -1,8 +1,6 @@
 ---
 title: "Hi 👋, Welcome to my Blog"
 date: 2023-12-23
-categories:
-    - personal
 ---
 
 ## About Me
