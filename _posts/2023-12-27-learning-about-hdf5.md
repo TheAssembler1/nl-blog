@@ -99,9 +99,9 @@ hid_t dataspace_id = H5Screate_simple(2, dims, NULL);
 hid_t dataset_id = H5Dcreate2(file_id, "/dset", H5T_STD_I32BE, dataspace_id, H5P_DEFAULT, H5P_DEFAULT, H5P_DEFAULT);
 
 // NOTE: closing all resources, should check status after closing
-H5Dclose(dataset_id);
-H5Sclose(dataspace_id);
-H5Fclose(file_id);
+herr_t dataset_status = H5Dclose(dataset_id);
+herr_t dataspace_status = H5Sclose(dataspace_id);
+herr_t file_status = H5Fclose(file_id);
 ```
 
 `h5dump file.h5` outputs:
@@ -127,6 +127,13 @@ So you can see that working with HDF5 feels more like working with a database wh
 
 ## Dataset I/O Operations
 
+### New Functions Used
+
+- [H5Dopen](https://docs.hdfgroup.org/hdf5/develop/_h5version_8h.html#a7dba2e5b2045f31c0932123ffb54f7a3)
+- [H5Dwrite](https://docs.hdfgroup.org/hdf5/develop/group___j_h5_d.html#gac1ac212d9a253dc6a1344b87d687f911)
+- [H5Dread](https://docs.hdfgroup.org/hdf5/develop/group___j_h5_d.html#ga04982b415376895873aa72fa5b7cc323)
+
+
 When using HDF5 the format of the file in memory can be different than the one on disk. This causes the programmer specify these properties:
 
 - The dataset
@@ -138,6 +145,49 @@ When using HDF5 the format of the file in memory can be different than the one o
 
 Sheesh that's a pain, but requiring the programmer to be detailed in this way allows the HDF5 library to perform optimizations when writing/reading to and from disk.
 
+```
+  int mem_data[4][6] = {
+    {1, 2, 3, 4, 5, 6},
+    {7, 8, 9, 10, 11, 12},
+    {13, 14, 15, 16, 17, 18},
+    {19, 20, 21, 22, 23, 24}
+  };
+
+  hid_t file_id = H5Fopen("file.h5", H5F_ACC_RDWR, H5P_DEFAULT);
+  hid_t dataset_id = H5Dopen(file_id, "/dset", H5P_DEFAULT);
+
+  // NOTE: writing to dataset
+  herr_t write_status = H5Dwrite(dataset_id, H5T_NATIVE_INT, H5S_ALL, H5S_ALL, H5P_DEFAULT, mem_data);
+  
+  // NOTE: reading from dataset
+  herr_t read_status = H5Dread(dataset_id, H5T_NATIVE_INT, H5S_ALL, H5S_ALL, H5P_DEFAULT, mem_data);
+
+  // NOTE: closing all resources, should check status after closing
+  hid_t dataset_status = H5Dclose(dataset_id);
+  hid_t file_status = H5Fclose(file_id);
+```
+
+`h5dump file.h5` outputs:
+
+```
+HDF5 "file.h5" {
+GROUP "/" {
+   DATASET "dset" {
+      DATATYPE  H5T_STD_I32BE
+      DATASPACE  SIMPLE { ( 4, 6 ) / ( 4, 6 ) }
+      DATA {
+      (0,0): 1, 2, 3, 4, 5, 6,
+      (1,0): 7, 8, 9, 10, 11, 12,
+      (2,0): 13, 14, 15, 16, 17, 18,
+      (3,0): 19, 20, 21, 22, 23, 24
+      }
+   }
+}
+}
+```
+
+We did it 👏👏👏! So in this example we opened the file retrieved the id of the dataset we wanted to operate on, and then wrote an array to that dataset and also read from it.
+
 ## Conclusion
 
-Hopefully you enjoyed my rantings about the HDF5 file format. I just wanted to give a basic overview of what HDF was and how to do some basic operatiosn with the file format. See you next time ✌️!
+Hopefully you enjoyed my rantings about the HDF5 file format. I just wanted to give a basic overview of what HDF was and how to do some basic operatiosn with the file format. In the next one we will see how to add attributes to our groups and datasets. Until the, see you next time ✌️!
