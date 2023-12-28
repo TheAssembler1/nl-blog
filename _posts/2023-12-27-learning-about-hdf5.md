@@ -2,6 +2,7 @@
 title: "Learning About HDF5 💽"
 date: 2023-12-27
 excerpt: What HDF5 is and why it is useful. How to install HDF5 for use on a serial file system. How to create, open, and close files. How to create datasets and how to read/write to/from them.
+hidden: true
 ---
 
 ## What is HDF5 and why is it Helpful
@@ -12,7 +13,7 @@ In traditional file systems, such as ext4, accessing files requires the requesti
 
 While the HDF5 library is written in C function wrappers have been written to support other languages such as FORTAN 90, C++, and Java.
 
-Most of the information presented here can be found from its original source [Learning the Basics.](https://docs.hdfgroup.org/hdf5/develop/_learn_basics.html).
+Most of the information presented here can be found from its original source[Learning the Basics.](https://docs.hdfgroup.org/hdf5/develop/_learn_basics.html).
 
 ## HDF5 File
 
