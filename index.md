@@ -1,4 +1,3 @@
 ---
 layout: home
-description: My name is Noah Lewis, I currently attend Louisiana State University (LSU) and entering my last semster at the college. Afterwards, I plan to pursue a PHD at Ohio State Univeristy (OSU) under the advisory of Suren Byna, whose personal website you may find [here](https://sbyna.github.io/). My research will revolve around HPC I/O.
 ---

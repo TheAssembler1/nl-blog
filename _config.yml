@@ -1,5 +1,9 @@
 title: Noah Lewis (Personal Website)
-url: https://theassembler1.com
+author :
+  name : Name Lastname
+  email : blah@email.test
+  github : username
+  twitter : username
 header_pages:
   - about.md
 
