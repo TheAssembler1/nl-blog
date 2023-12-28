@@ -1,7 +1,7 @@
 ---
 title: "Learning About HDF5 💽"
 date: 2023-12-27
-excerpt: This is a brief description of your blog post.
+excerpt: What HDF5 is and why it is usefull. How to install HDF5 for use on a serial file system. How to create, open, and close files. How to create, read, and write from datasets.
 ---
 
 ## What is HDF5 and why is it Helpful
