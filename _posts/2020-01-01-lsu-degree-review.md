@@ -1,6 +1,6 @@
 ---
 title: "My CS Degree Review"
-date: 0000-00-01
+date: 2020-01-01
 excerpt: Reviewing my experiencing obtaining a compute science degree from Lousiana State University (LSU)
 hidden: true
 ---
