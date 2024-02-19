@@ -9,8 +9,6 @@ hidden: false
 
 To provide a definition from Wikipedia, the Hierarchical Data Format (HDF) comprises a set of file formats (HDF4, HDF5) designed for storing and organizing large amounts of data. HDF is a file format used when there is a need to store massive volumes of data. The primary advantage of using HDF5 is its ability to leverage parallel file systems commonly employed in High-Performance Computing (HPC) systems.
 
-In traditional file systems, such as ext4, accessing files requires the requesting process to obtain a lock on the file, preventing other processes from concurrently accessing it. However, when employing HDF5, multiple processes can read and write to a file in parallel. HDF5 also features collective I/O, a method in which multiple processes collaborate to efficiently read and write data to a shared file system.
-
 While the HDF5 library is written in C function wrappers have been written to support other languages such as FORTAN 90, C++, and Java.
 
 Most of the information presented here can be found from its original source[Learning the Basics.](https://docs.hdfgroup.org/hdf5/develop/_learn_basics.html).
