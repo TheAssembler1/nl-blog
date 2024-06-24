@@ -11,7 +11,5 @@ header_pages:
   - about.md
 show_excerpts: true
 
-remote_theme: jekyll/minima
-
 minima:
   skin: dark
