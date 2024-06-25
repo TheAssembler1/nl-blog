@@ -5,6 +5,8 @@ excerpt: What HDF5 is and why it is useful. How to install HDF5 for use on a ser
 hidden: false
 ---
 
+## Last Updated - June 25, 2024
+
 ## What is HDF5 and why is it Helpful
 
 To provide a definition from Wikipedia, the Hierarchical Data Format (HDF) comprises a set of file formats (HDF4, HDF5) designed for storing and organizing large amounts of data. HDF is a file format used when there is a need to store massive volumes of data. The primary advantage of using HDF5 is its ability to leverage parallel file systems commonly employed in High-Performance Computing (HPC) systems.
