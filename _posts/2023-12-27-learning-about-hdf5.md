@@ -183,8 +183,8 @@ GROUP "/" {
 }
 ```
 
-We did it 👏👏👏! So in this example we opened the file retrieved the id of the dataset we wanted to operate on, and then wrote an array to that dataset and also read from it.
+So in this example we opened the file retrieved the id of the dataset we wanted to operate on, and then wrote an array to that dataset and also read from it.
 
 ## Conclusion
 
-Hopefully you enjoyed my rantings about the HDF5 file format. I just wanted to give a basic overview of what HDF was and how to do some basic operatiosn with the file format. In the next one we will see how to add attributes to our groups and datasets. Until the, see you next time ✌️!
+Hopefully you enjoyed my rantings about the HDF5 file format. I just wanted to give a basic overview of what HDF was and how to do some basic operatiosn with the file format. In the next one we will see how to add attributes to our groups and datasets. Until then, see you next time!
