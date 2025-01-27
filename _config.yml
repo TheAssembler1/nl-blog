@@ -3,7 +3,8 @@ author :
   name : Noah Lewis
   email : lewis.3621@osu.edu
   github : https://www.github.com/TheAssembler1
-description: What the hell even is a circuit?
+description: >
+  What the hell even is a circuit?
 header_pages:
   - about.md
 show_excerpts: true
