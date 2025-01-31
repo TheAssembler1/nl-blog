@@ -1,6 +1,6 @@
 ---
 title: "Fundamentals of Electric Circuits - Appendix A
-date: 2025-1-27
+date: 2025-1-30
 excerpt: Notes and review of appendix A
 ---
 
