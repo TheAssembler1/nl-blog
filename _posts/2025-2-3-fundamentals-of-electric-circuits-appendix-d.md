@@ -1,6 +1,6 @@
 ---
 title: "Fundamentals of Electric Circuits - Appendix D"
-date: 2025-3-03
+date: 2025-2-3
 excerpt: Notes and review of appendix D
 ---
 
