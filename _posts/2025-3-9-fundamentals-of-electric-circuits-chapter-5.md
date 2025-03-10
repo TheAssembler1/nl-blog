@@ -1,5 +1,5 @@
 ---
-title: "Fundamentals of Electric Circuits - Chapter 5
+title: "Fundamentals of Electric Circuits - Chapter 5"
 date: 2025-3-9
 excerpt: Notes and review of chapter 5
 ---
