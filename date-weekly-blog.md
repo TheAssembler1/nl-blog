@@ -1,0 +1,154 @@
+---
+title: "Journey to Elite Engineering/Researcher"
+date: date
+excerpt: Weekly blog progress update.
+---
+
+# Progress Update
+
+## Notes
+So this is my first week trying out a weekly blog. I wanted to keep track of several metrics but not so many that it is cumbersome. I think I want to start by describing myself and what I'm trying to improve. So I'm currently a Ph.D. student at The Ohio State Univeristy studying computer science with a focus on data management, parallel I/O, and distributed storage systems. I have a BS in computer science and a minor in mathematics from Louisiana State University. I'm also working on my BS in Electrical Enginering degree from Arizona State University. So, yeh, it's a lot of work but I don't wanna have any regrets once I'm older about what I should have learned early on. I think I have 3 big flaws that I really would like to at least improve upon if not remove. The first of which is not being consitant with the amount I work. I work quite a bit, normally at least 50 hours if not more each week. However, sometimes I get completely burnt out and sidetracked and end up not working for 4-5 days at a time which really hurts my productivity. So this ones a big for me. A second flaw is that I definetly don't socialize enough and would like to date more or at least talk to more people and make new friends outside of my area of research. This one I know is an issue but I defintely care less about it. However, I don't want to die alone lol so I better priorityize this I think. The big reason I struggle with this one as far as dating goes is simply because of my health and that is why it is my final large flaw. I simply too fats and don't feel like I'm worthy of a relationship right now. I want to date someone who is healthy and I can't require more from them than I do myself. With these flaws in mind you'll be able to see why I chose the goals I did.
+
+## Goals
+For each of the goals I'll reflect back at the end of each weekly blog and just discuss how I think my progress was towards each of them. I'm using an app called Better sleep however, I have no idea how accurate it is but we'll just assume it works as advertised. I'm gonna use Forest to track how long I worked each day. I'm also gonna track washing my clothes, taking showers, and brushing my teeth. I don't have issues doing these sort of menial tasks, however, they are really important so I wanna make sure I get them done.
+
+### Short Term Goals (0-1 Month)
+1. Be consistent with working every day.
+2. Focus on the day to day incremental progress.
+3. Have a good sleep schedule.
+4. Stretch every day.
+6. 30min walk every day.
+5. Wash clothes every Monday.
+
+### Medium Term Goals (1-6 Months)
+Diet: So I decided that in the next few months I'm gonna try a new diet. I really hate the idea of weighing myself frequently only because as long as I'm following the diet I care less about the day to day fluctuations in weight. Also I am drinking a single coffee in the morning even though it is a water fast lol. I am gonna weigh myself at the begginning of each week though just to keep progress. I want to try the following schedule:
+
+Break 1:
+    - 7 Days Water Fast
+    - 1 Day 1500 Calorie Day
+Break 2:
+    - 7 Days Water Fast
+    - 1 Day 1500 Calorie Day
+Break Split:
+    - 7 Days 1500 Calories per day
+
+Break 3:
+    - 7 Days Water Fast
+    - 1 Day 1500 Calorie Day
+Break 4:
+    - 7 Days Water Fast
+    - 1 Day 1500 Calorie Day
+Break Split:
+    - 7 Days 1500 Calories per day
+
+Break 5:
+    - 7 Days Water Fast
+    - 1 Day 1500 Calorie Day
+Break 6:
+    - 7 Days Water Fast
+    - 1 Day 1500 Calorie Day
+Break Split:
+    - 7 Days 1500 Calories per day
+
+Break 7:
+    - 7 Days Water Fast
+    - 1 Day 1500 Calorie Day
+Break 8:
+    - 7 Days Water Fast
+    - 1 Day 1500 Calorie Day
+Break Split:
+    - 7 Days 1500 Calories per day
+
+Break 9:
+    - 7 Days Water Fast
+    - 1 Day 1500 Calorie Day
+Break 10:
+    - 7 Days Water Fast
+    - 1 Day 1500 Calorie Day
+Break Split:
+    - 7 Days 1500 Calories per day
+
+### Long Term Goals(6-12 Months)
+1. Finish a conference paper (won't go into details for confidentiality reasons...).
+2. Get PDC codebase to a more stable and documented position.
+3. Make steady progress in coursework at OSU and ASU.
+
+PDC is a codebase which I work on for my research. However, it is very untested and doesn't seem very stable and easy to contribute to. I would like to get it to a point where rapid prototyping on top of it is much easier. In addition, I want to just increase the amount of documentation for the project to help everyone including myself.
+
+### Very Long Term Goals (1-5 Years)
+1. Get my electrical engineering degree from ASU.
+2. Get my Ph.D. in Computer Science from OSU.
+3. Try dating once healthy enough.
+
+## Weekly
+Weight: 245 lbs
+
+## Wednesday
+
+### Daily Update
+Sleep: 
+    - Time in Bed: 12:17 AM
+    - Wakeup: 8:30 AM
+    - Time Asleep: 7h 25min
+    - Sleep Quality:
+        - Value: 86
+        - Awake: 47min
+        - REM: 2h 5min
+        - Light: 4h 15min
+        - Deep: 1h 5min
+Diet Followed: N
+    Instead:
+        1. Two Ramen 800 cal
+        2. Coffee 100 cal
+        3. Goldfish 100 cal
+
+### Tasks Done
+1. Morning teeth.
+2. Morning shower.
+3. Walk 30min.
+4. Stretch 15min.
+5. Afternoon teeth.
+
+### Notes
+Felt a bit tired but pretty good energy wise. I think once the weight/diet gets better I should be able to expect better energy levels. Trying not to stress about my Thursday meetings with my advisor. But as long as I work he won't mind the actual amount of work completed. I didn't fast today but I didn't overeat at all so I don't feel bad about that.
+
+### Hours Worked
+1. Math 1h.
+2. CS Research 9h 30min
+
+## Thursday
+Sleep: 
+    - Time in Bed: 12:25 AM
+    - Wakeup: 5:26 AM
+    - Time Asleep: 5h 5min
+    - Sleep Quality:
+        - Value: 73
+        - Awake: 40min
+        - REM: 1h
+        - Light: 1h 50min
+        - Deep: 1h 15min
+Diet Followed:
+
+### Tasks Done
+1. Walk 30min.
+2. Morning shower.
+4. Morning teeth.
+5. Stretch 15 min.
+
+
+### Hours Worked
+
+1. Math 1h.
+
+### Notes
+Didn't sleep as much as I wanted but I couldn't get myself to sleep more.
+
+## Friday
+
+## Saturday
+
+## Sunday
+
+## Monday
+
+## Tuesday
