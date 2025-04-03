@@ -1,6 +1,6 @@
 ---
 title: "Precalculus - Chapter 1 Section 5"
-date: 2025-3-30
+date: 2025-4-2
 excerpt: Notes and review of chapter 1 section 5.
 ---
 
